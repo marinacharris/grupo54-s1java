@@ -17,6 +17,7 @@ public class Ciclos {
         for(int i = 1; i<6; i++) {
             System.out.println(i);
         }
+        // for each, es el for que se usa para recorrer arrays
         String[] nombres = {"Marina","Juan","Pedro","Ana","Samuel"};
         for (String i: nombres){
             System.out.println(i);
