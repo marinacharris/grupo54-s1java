@@ -1,27 +1,19 @@
 public class Ciclos {
-    public static void main(String[] args) throws Exception {
-        // conteo del 1 al 5
-        int count = 1;
-        while (count <=5){
-            System.out.println(count);
-            count++;
+    public static void main(String[] args) {
+        int conta = 1;
+        while (conta<=5){
+            System.out.println(conta);
+            conta++;
         }
-        // do while
-        count = 1;
-        do{
-            System.out.println(count);
-            count++;
-        }
-        while(count <=5);
-        //ciclo for
-        for(int i = 1; i<6; i++) {
+        System.out.println("------------------------");
+        conta = 1;
+        do{ // evalúa la condición al final del ciclo y esto asegura que se ejecuta por lo menos una vez
+            System.out.println(conta);
+            conta++;
+        }while(conta<=5);
+        System.out.println("------------------------");
+        for(int i=1;i<6;i++){
             System.out.println(i);
         }
-        // for each, es el for que se usa para recorrer arrays
-        String[] nombres = {"Marina","Juan","Pedro","Ana","Samuel"};
-        for (String i: nombres){
-            System.out.println(i);
-        }
-
-    }   
+    }
 }

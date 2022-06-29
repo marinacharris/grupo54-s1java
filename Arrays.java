@@ -1,33 +1,37 @@
 public class Arrays {
     public static void main(String[] args) {
-        int[] numeros = {84,52,14,17};
-        for (int i: numeros){
-            System.out.println(i);
+        //declarar un array unidimensional
+        String[] nombres = {"Juan","Ana","Pedro","Sofía"};
+        System.out.println(nombres[3]);
+        System.out.println("--------------------");
+        for(int i = 0; i < nombres.length; i++){ //recorremos con los índices
+            System.out.println(nombres[i]);
         }
-        System.out.println("---------------------------");
+        // for each
+        for(String nom:nombres){ //
+            System.out.println(nom);
+        }
+
+        int[][] numeros = {{45,22,89},{12,36,78}}; // array bidimensional
+        // 45   22  89
+        // 12   36  78
+        System.out.println(numeros[1][1]); // imprimimos el 36 en la posicion [1,1]
+        System.out.println("--------------------------");
+        // recorrido de un array bidimensional
         for (int i = 0; i < numeros.length; i++) {
-            System.out.println(numeros[i]);
-        }
-        int[][] matriz = {{29,45,12},{36,99,18}};
-        // 29   45  12
-        // 36   99  18
-        System.out.println("---------------------------");
-
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length; j++) {
-                System.out.println(matriz[i][j]);
+            for(int j = 0; j < numeros[i].length; j++) {
+                System.out.println(numeros[i][j]); 
             }
-
         }
-
-        System.out.println("---------------------------");
-
-        for (int x[]:matriz){
-            for (int y:x){
-                System.out.println(y);
+        System.out.println("-----------------------");
+        for (int[] i: numeros){
+            for (int j: i){
+            System.out.println(j);
             }
         }
 
 
+
+        
     }
 }
